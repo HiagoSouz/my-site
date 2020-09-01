@@ -18,6 +18,10 @@ h2{
     text-align: center;
 }
 
+h3{
+    text-align: center;
+}
+
 .header-box{
     margin-top: 2rem;
     display: flex;
@@ -57,6 +61,7 @@ h2{
     border-radius: 50%;
     border: solid 3px #7510F7;
     text-align: center;
+    
 }
 
 .site-title{
@@ -68,5 +73,64 @@ h2{
 }
 
 .apresentation-container{
-    color: #7510F7;
+    margin-top: 100px;
+    position: absolute;
+    height: 500px;
+    color: #ffffff;
+    background-color: #7510F7;
+}
+
+.apresentation-container .apresentation-paragraph{
+    text-align: center;
+    margin: 0 20px;
+
+}
+
+.apresentation-container .apresentation-title{
+    margin-top: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.my-skills{
+    color: #141c3a;
+
+}
+
+.skills-container{
+    position: absolute;
+    background-color:  #ffffff;
+    width: calc(100% - 40px);
+    margin: 280px 20px 0 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.skills-container .front-icon{
+    margin-top: 20px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.skills-container .skills{
+    text-align: center;
+
+}
+
+.skills-container .back-icon{
+    margin-top: 20px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.skills-container .mobile-icon{
+    margin-top: 20px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
