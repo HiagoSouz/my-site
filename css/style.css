@@ -12,6 +12,7 @@ p{
 
 h1{
     text-align: center;
+    font-family: Roboto;
 }
 
 h2{
@@ -31,6 +32,8 @@ h2{
     margin-left: 5px;
     padding-top: 5px;
     cursor: pointer;
+    text-decoration: none;
+
 }
 
 .header-box .contact-me{
@@ -41,6 +44,8 @@ h2{
     font-size: 20px;
     padding: 5px;
     cursor: pointer;
+    text-decoration: none;
+
 }
 
 .header-box .contact-me:hover{
@@ -226,52 +231,6 @@ h2{
     text-decoration: none;
 }
 
-.footer-div{
-    margin-top: 100px;
-    background-color:#7510F7;
-    width: 100%;
-    height: 10rem;
-
-}
-
-.footer-avatar{
-    padding-top: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.link-avatar{
-    padding: 10px;
-    border-radius: 50%;
-    height: 30px;
-    width: 30px;
-    background-color: #fff;
-    margin-right: 10px;
-    fill: #7510F7;
-    cursor: pointer;
-}
-
-.link-avatar:hover{
-    transition: all .2s ease-in-out;
-    fill: white;
-    background-color: #7510F7;
-    border: solid 1px white;
-}
-
-
-.link-avatar:last-of-type{
-    margin-right: 0;
-}
-
-.copyright-paragraph{
-    color: #fff;
-    font-weight: bold;
-    font-size: 14px;
-    text-align: center;
-    margin-top: 2rem;
-    
-}
 
 @media (min-width: 780px) {
     .skills-card{
@@ -334,6 +293,17 @@ h2{
         align-items: center;
         flex-direction: row;
         width: calc( 70% + 40px);
+        margin: auto;
+        box-sizing: content-box;
+        text-align: center;
+    }
+
+    .my-projects-projects {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: calc( 50% + 40px);
         margin: auto;
         box-sizing: content-box;
         text-align: center;
