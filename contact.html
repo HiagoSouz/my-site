@@ -3,6 +3,17 @@
 <html>
     <head>
 
+        <script>
+           function validateForm() {
+                var x = document.forms["myForm"]["name-field"].value;
+                if (x == "") {
+                    alert("Name must be filled out");
+                    return false;
+                }
+
+    
+            }
+            </script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>Hiago Souza</title>
@@ -13,7 +24,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     </head>
+
+
 <body>
+
     <div class="general-container">
         <div class="background-image">
             <div class="contact-container">
@@ -22,11 +36,11 @@
                 <a href="./index.html"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path  d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.151 17.943l-4.143-4.102-4.117 4.159-1.833-1.833 4.104-4.157-4.162-4.119 1.833-1.833 4.155 4.102 4.106-4.16 1.849 1.849-4.1 4.141 4.157 4.104-1.849 1.849z"/></svg></a>
             </div>
 
-                <div class="contact-form">
+                <form class="contact-form" name="myForm" onsubmit="return validateForm()" method="post">
                     <h1 class="h1-title">Contact Me</h1>
 
                     <div class="input name-input" id="name-field">
-                        <input class="input-field"  placeholder="Your Name">
+                        <input class="input-field"  placeholder="Your Name" type="text" name="name-field">
                     </div>
 
                     <div class="input email-input" id="email-field">
@@ -38,12 +52,13 @@
                     </div>
 
                     <div class="button-div">
-                        <button class="send-button">
-                                Send Your Message
-                        </button>
+                        <input class="send-button" type="submit" value="Send">
+                                
+                        </input>
                     </div>
-                </div>
+                </form>
             </div>
+            
             <div class="footer-div-contact">
                 <div class="footer-avatar">
                     <a class="link-avatar"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
